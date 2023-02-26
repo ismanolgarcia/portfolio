@@ -1,0 +1,22 @@
+.main {
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  display: flex;
+}
+
+.hero {
+  width: 100%;
+  @include flex(center, center, row);
+}
+
+@media screen and (max-width: 1024px) {
+  .main {
+    flex-direction: column;
+  }
+  .container {
+    flex-direction: column;
+  }
+}
