@@ -1,45 +1,48 @@
-@mixin btn($padding, $fontSize, $fontWeight, $color, $bgColor) {
-  padding: $padding;
-  font-size: $fontSize;
-  font-weight: $fontWeight;
-  color: $color;
-  background-color: $bgColor;
-  cursor: pointer;
-}
+// @mixin btn($padding, $fontSize, $fontWeight, $color, $bgColor) {
+//   padding: $padding;
+//   font-size: $fontSize;
+//   font-weight: $fontWeight;
+//   color: $color;
+//   background-color: $bgColor;
+//   cursor: pointer;
+// }
 
-.buttons {
-  margin: 120px 0 0 0;
-}
+// .buttons {
+//   height: 55.05px;
+//   width: 100%;
+//   @include flex(space-around, flex-end, row);
+//   margin: 110px 0 0 0;
+// }
 
-.button__email {
-  @include btn(10px 100px, 0.9em, 800, $secondary-color, $accent-color-0);
-}
-.button__email:hover {
-  scale: 1.05;
-}
+// .button__email {
+//   @include btn(12px 100px, 0.9em, 800, $secondary-color, $accent-color-0);
+// }
+// .button__email:hover {
+//   scale: 1.05;
+// }
 
-.button__resume {
-  @include btn(12px 80px, 0.9em, 800, $secondary-color, $primary-color);
-}
-.button__resume:hover {
-  scale: 1.05;
-}
+// .button__resume {
+//   @include btn(12px 80px, 0.9em, 800, $secondary-color, $primary-color);
+// }
+// .button__resume:hover {
+//   scale: 1.05;
+// }
 
-.button__projects {
-  @include btn(12px 80px, 0.9em, 800, $secondary-color, $primary-color);
-}
-.button__projects:hover {
-  scale: 1.05;
-}
+// .button__projects {
+//   @include btn(12px 80px, 0.9em, 800, $secondary-color, $primary-color);
+// }
+// .button__projects:hover {
+//   scale: 1.05;
+// }
 
-@media screen and (max-width: 1024px) {
-  .buttons {
-    width: 100%;
-  }
-  .button__projects {
-    padding: 10px 50px;
-  }   
-  .button__resume {
-    padding: 10px 50px;
-  }
-}
+// @media screen and (max-width: 1024px) {
+//   .buttons {
+//     width: 100%;
+//   }
+//   .button__projects {
+//     padding: 10px 50px;
+//   }
+//   .button__resume {
+//     padding: 10px 50px;
+//   }
+// }

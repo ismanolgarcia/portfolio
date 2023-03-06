@@ -1,22 +1,38 @@
-.main {
-  display: flex;
-  flex-direction: column;
-}
-
-.container {
-  display: flex;
-}
-
 .hero {
-  width: 100%;
-  @include flex(center, center, row);
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  height: 100vh;
+}
+
+.hero__title {
+  font-size: 3rem;
+}
+
+.hero__description {
+  font-size: 1.5rem;
 }
 
 @media screen and (max-width: 1024px) {
   .main {
     flex-direction: column;
   }
-  .container {
+  .hero {
+    flex-direction: column-reverse;
+    justify-content: center;
+    margin: 5% 0 0 0;
+  }
+  .hero__container {
+    display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .hero__title {
+    text-align: center;
+    font-size: 2rem;
+  }
+  .hero__description {
+    text-align: justify;
   }
 }

@@ -1,0 +1,79 @@
+.navbar {
+  @include flex(space-between, center, row);
+  width: 100%;
+  position: fixed;
+  background: $accent-color-3;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+  padding: 10px 50px;
+  z-index: 9999999999;
+}
+
+.nav-menu {
+  display: flex;
+  transition: all 0.25s ease-in;
+  @media screen and (max-width: 768px) {
+    background: $accent-color-3;
+    flex-direction: column;
+    justify-content: center;
+    opacity: 0;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transform: translatey(-100%);
+    text-align: center;
+    .menu-active & {
+      transform: translatey(0%);
+      opacity: 1;
+    }
+  }
+
+  .menu-item a {
+    color: $secondary-color;
+    display: block;
+    line-height: 30px;
+    margin: 0px 10px;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+
+    &:hover {
+      color: lighten($accent-color-3, 20);
+      text-decoration: underline;
+    }
+
+    @media screen and (max-width: 768px) {
+      font-size: 20px;
+      margin: 8px;
+    }
+  }
+}
+
+.sub-nav {
+  border: 1px solid #ccc;
+  display: none;
+  position: relative;
+  background-color: $secondary-color;
+  padding: 5px 5px;
+  list-style: none;
+  width: 230px;
+  @media screen and (max-width: 768px) {
+    position: fixed;
+    width: 100%;
+    display: none;
+    background-color: rgba(0, 0, 0, 0.2);
+    box-sizing: border-box;
+  }
+}
+
+.nav__link {
+  &:hover + .sub-nav {
+    display: block;
+  }
+}
+
+.sub-nav {
+  &:hover {
+    display: block;
+  }
+}

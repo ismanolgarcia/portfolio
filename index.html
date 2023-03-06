@@ -1,94 +1,248 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Ismanol García</title>
-    <link rel="stylesheet" href="./src/css/main.css" />
-    <script
-      src="https://kit.fontawesome.com/5e28278011.js"
-      crossorigin="anonymous"
-    ></script>
-  </head>
-  <body>
-    <main class="main">
-      <div class="container">
-        <section class="hero">
-          <div class="person">
-            <div class="personal__container">
-              <figure class="person__figure">
-                <img
-                  src="./src/assets/image/ismanolgarcia.jpeg"
-                  alt="Ismanol García"
-                  class="person__image"
-                />
-                <figcaption class="person__hidden">Ismanol García</figcaption>
-              </figure>
-              <h1 class="person__name">&lt;Ismanol García/&gt;</h1>
-              <h2 class="person__rol">Frontend</h2>
-            </div>
-            <button type="submit" class="button__email">Email me</button>
-            <div class="social">
-              <a
-                href="https://www.linkedin.com/in/ismanolgarcia/"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="social__link"
-              >
-                <i class="social__icon fa-brands fa-linkedin"></i>
-              </a>
-              <a
-                href="https://twitter.com/Ismanolgarcia"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="social__link"
-              >
-                <i class="social__icon fa-brands fa-twitter"></i>
-              </a>
-              <a
-                href="https://www.instagram.com/ismanolgarcia/"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="social__link"
-              >
-                <i class="social__icon fa-brands fa-instagram"></i>
-              </a>
-              <a
-                href="https://www.tiktok.com/@ismanolgarcia"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="social__link"
-              >
-                <i class="social__icon fa-brands fa-tiktok"></i>
-              </a>
-              <a
-                href="https://www.youtube.com/@ismanolgarcia"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="social__link"
-              >
-                <i class="social__icon fa-brands fa-youtube"></i>
-              </a>
-            </div>
-          </div>
-        </section>
-        <section class="about">
-          <h3 class="about__title">&lt;About Me/&gt;</h3>
-          <p class="about__description">
-            I am from the Dominican Republic and I am currently studying
-            Software Engineering with a focus on Frontend development. I have
-            knowledge in HTML, CSS, JavaScript, and Git, and I am currently
-            learning React and its ecosystem to be able to create higher quality
-            web applications.
-          </p>
-          <div class="buttons">
-            <button type="submit" class="button__resume">Resume</button>
-            <button type="submit" class="button__projects">Projects</button>
-          </div>
-        </section>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ismanol García</title>
+  <meta name="author" content="Ismanol García">
+  <meta name="keywords" content="Ismanol García, Frontend, Software, Web ">
+  <meta name="description" content="Portfolio the Ismanol García">
+  <meta name="robots" content="index, follow">
+  <link rel="stylesheet" href="./src/css/main.css" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <script src="https://kit.fontawesome.com/5e28278011.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <nav class="navbar">
+    <div class="logo">Ismanol Garcia</div>
+    <button id="menu-toggler" data-class="menu-active" class="hamburger">
+      <span class="hamburger-line hamburger-line-top"></span>
+      <span class="hamburger-line hamburger-line-middle"></span>
+      <span class="hamburger-line hamburger-line-bottom"></span>
+    </button>
+    <ul id="primary-menu" class="menu nav-menu">
+      <li class="menu-item current-menu-item">
+        <a class="nav__link" href="#">Home</a>
+      </li>
+      <li class="menu-item"><a class="nav__link" href="#about">About</a></li>
+      <li class="menu-item">
+        <a class="nav__link" href="#skills">Skills</a>
+      </li>
+      <li class="menu-item">
+        <a class="nav__link" href="#education">Education</a>
+      </li>
+      <li class="menu-item">
+        <a class="nav__link" href="#projects">Projects</a>
+      </li>
+    </ul>
+  </nav>
+
+  <main class="main">
+
+    <section class="hero" id="hero">
+      <div class="hero__container">
+        <h1 class="hero__title" data-aos="fade-down">Ismanol García</h1>
+        <p class="hero__description" data-aos="fade-down">
+          A passionate frontend developer with a focus on creating attractive
+          and efficient user interfaces.
+        </p>
+        <div class="social" data-aos="fade-right">
+          <a href="https://www.linkedin.com/in/ismanolgarcia/" target="_blank" rel="noopener noreferrer"
+            class="social__link">
+            <i class="social__icon fa-brands fa-linkedin"></i>
+          </a>
+          <a href="https://twitter.com/Ismanolgarcia" target="_blank" rel="noopener noreferrer" class="social__link">
+            <i class="social__icon fa-brands fa-twitter"></i>
+          </a>
+          <a href="https://www.instagram.com/ismanolgarcia/" target="_blank" rel="noopener noreferrer"
+            class="social__link">
+            <i class="social__icon fa-brands fa-instagram"></i>
+          </a>
+          <a href="https://www.tiktok.com/@ismanolgarcia" target="_blank" rel="noopener noreferrer"
+            class="social__link">
+            <i class="social__icon fa-brands fa-tiktok"></i>
+          </a>
+          <a href="https://www.youtube.com/@ismanolgarcia" target="_blank" rel="noopener noreferrer"
+            class="social__link">
+            <i class="social__icon fa-brands fa-youtube"></i>
+          </a>
+        </div>
       </div>
-    </main>
-    <script type="module" src="./src/js/main.js"></script>
-  </body>
+      <figure class="person__figure" data-aos="fade-up">
+        <img src="./src/assets/image/ismanolgarcia.jpeg" alt="Ismanol García" class="person__image" loading="lazy" />
+        <figcaption class="person__hidden">Ismanol García</figcaption>
+      </figure>
+    </section>
+
+    <section class="about" id="about">
+      <h3 class="title__section">About Me</h3>
+      <p class="about__description" data-aos="fade-up">
+        My name is Ismanol García, I am from the Dominican Republic and I am
+        currently studying Software Engineering with a focus on Frontend
+        Development. I have knowledge in HTML, CSS, JavaScript and Git, and I
+        am currently learning React and its ecosystem to create higher quality
+        web applications. In addition to my technical skills, I also possess
+        valuable soft and hard skills for companies. If my profile interests
+        you, please do not hesitate to contact me, I would appreciate any
+        feedback to improve.
+      </p>
+    </section>
+
+    <section class="skills" id="skills">
+      <h3 class="title__section">Skills</h3>
+      <div class="skills__container">
+        <div class="skill__card" data-aos="zoom-in">
+          <img src="./src/assets/icon/html.svg" alt="" class="skill__image" loading="lazy" />
+          <p class="skill__title">html</p>
+        </div>
+        <div class="skill__card" data-aos="zoom-in">
+          <img src="./src/assets/icon/css.svg" alt="" class="skill__image" loading="lazy" />
+          <p class="skill__title">css</p>
+        </div>
+        <div class="skill__card" data-aos="zoom-in">
+          <img src="./src/assets/icon/javascript.svg" alt="" class="skill__image" loading="lazy" />
+          <p class="skill__title">javascript</p>
+        </div>
+        <div class="skill__card" data-aos="zoom-in">
+          <img src="./src/assets/icon/sass.svg" alt="" class="skill__image" loading="lazy" />
+          <p class="skill__title">sass</p>
+        </div>
+        <div class="skill__card" data-aos="zoom-in">
+          <img src="./src/assets/icon/react.svg" alt="" class="skill__image" loading="lazy" />
+          <p class="skill__title">react</p>
+        </div>
+        <div class="skill__card" data-aos="zoom-in">
+          <img src="./src/assets/icon/node-js.svg" alt="" class="skill__image" loading="lazy" />
+          <p class="skill__title">node js</p>
+        </div>
+        <div class="skill__card" data-aos="zoom-in">
+          <img src="./src/assets/icon/git.svg" alt="" class="skill__image" loading="lazy" />
+          <p class="skill__title">git</p>
+        </div>
+        <div class="skill__card" data-aos="zoom-in">
+          <img src="./src/assets/icon/terminal.svg" alt="" class="skill__image" loading="lazy" />
+          <p class="skill__title">terminal</p>
+        </div>
+        <div class="skill__card" data-aos="zoom-in">
+          <img src="./src/assets/icon/npm.svg" alt="" class="skill__image" loading="lazy" />
+          <p class="skill__title">npm</p>
+        </div>
+        <div class="skill__card" data-aos="zoom-in">
+          <img src="./src/assets/icon/figma.svg" alt="" class="skill__image" loading="lazy" />
+          <p class="skill__title">figma</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="education" id="education">
+      <h3 class="title__section">Education</h3>
+      <div class="education__container">
+        <div class="school" data-aos="fade-up">
+          <img src="./src/assets/image/Logo-azul-UAPA-01-1.webp" class="school__image" loading="lazy" />
+          <p class="school__name">Universidad Abierta para Adultos</p>
+          <p class="school__grade">Software Engineering</p>
+          <p class="school__date">March 2020 - October 2024</p>
+        </div>
+        <div class="school" data-aos="fade-up">
+          <img src="./src/assets/image/oracle-one.png" class="school__image" loading="lazy" />
+          <p class="school__name">Oracle Next Education</p>
+          <p class="school__grade">Frontend</p>
+          <p class="school__date">November 2022 - June 2023</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="projects" id="projects">
+      <h3 class="title__section">Projects</h3>
+      <div class="projects__container">
+        <div class="card" data-aos="fade-up">
+          <img class="card__background" src="./src/assets/image/encriptador.png"
+            alt="Photo of Cartagena's cathedral at the background and some colonial style houses" width="1920"
+            height="2193" loading="lazy" />
+          <div class="card__content | flow">
+            <div class="card__content--container | flow">
+              <h2 class="card__title">Encrypter</h2>
+              <p class="card__description">
+                I developed a project with HTML, CSS, and JS for the Programa One logic challenge. It was an exciting
+                challenge!
+              </p>
+            </div>
+            <div>
+              <a href="https://github.com/ismanolgarcia/encriptador-de-texto" target="_blank" rel="noopener noreferrer">
+                <button class="card__button">
+                  Github
+                  <i class="fa-brands fa-github"></i>
+                </button>
+              </a>
+              <a href="https://ismanolgarcia.github.io/encriptador-de-texto/" target="_blank" rel="noopener noreferrer">
+                <button class="card__button red">Preview
+                  <i class="fa-solid fa-eye"></i>
+                </button>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="card" data-aos="fade-up">
+          <img class="card__background" src="./src/assets/image/web-project.png"
+            alt="Photo of Cartagena's cathedral at the background and some colonial style houses" width="1920"
+            height="2193" loading="lazy" />
+          <div class="card__content | flow">
+            <div class="card__content--container | flow">
+              <h2 class="card__title">Web Projects</h2>
+              <p class="card__description">
+                Explore my website to discover my projects developed using HTML, CSS, and JS. You'll be amazed by what
+                I've created
+              </p>
+            </div>
+            <div>
+              <a href="https://github.com/ismanolgarcia/web-projects-to-practice" target="_blank"
+                rel="noopener noreferrer">
+                <button class="card__button">Github
+                  <i class="fa-brands fa-github"></i>
+                </button>
+              </a>
+              <a href="https://web-projects-to-practice.vercel.app/" target="_blank" rel="noopener noreferrer">
+                <button class="card__button red">Preview
+                  <i class="fa-solid fa-eye"></i>
+                </button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer" data-aos="fade-up">
+    <div>
+      <span>Coding by Ismanol Garcia |</span>
+      <span class="footer__date"></span>
+    </div>
+    <div class="social footer--social">
+      <a href="https://www.linkedin.com/in/ismanolgarcia/" target="_blank" rel="noopener noreferrer"
+        class="social__link">
+        <i class="social__icon fa-brands fa-linkedin"></i>
+      </a>
+      <a href="https://twitter.com/Ismanolgarcia" target="_blank" rel="noopener noreferrer" class="social__link">
+        <i class="social__icon fa-brands fa-twitter"></i>
+      </a>
+      <a href="https://www.instagram.com/ismanolgarcia/" target="_blank" rel="noopener noreferrer" class="social__link">
+        <i class="social__icon fa-brands fa-instagram"></i>
+      </a>
+      <a href="https://www.tiktok.com/@ismanolgarcia" target="_blank" rel="noopener noreferrer" class="social__link">
+        <i class="social__icon fa-brands fa-tiktok"></i>
+      </a>
+      <a href="https://www.youtube.com/@ismanolgarcia" target="_blank" rel="noopener noreferrer" class="social__link">
+        <i class="social__icon fa-brands fa-youtube"></i>
+      </a>
+    </div>
+  </footer>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script type="module" src="./src/js/main.js"></script>
+</body>
+
 </html>

@@ -1,0 +1,48 @@
+.skills {
+  height: 100%;
+  @include flex(center, center, column);
+}
+
+.skill__image {
+  width: 150px;
+}
+.skills__container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.skill__card {
+  background-color: $accent-color-3;
+  width: 200px;
+  height: 200px;
+  margin: 20px;
+  border-radius: 15px;
+  @include flex(space-around, center, column);  
+}
+
+.skill__card:hover {
+  scale: 1.1;
+}
+
+.skill__title {
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+@media screen and (max-width: 480px) {
+  .skill__image {
+    width: 60px;
+  }
+  .skill__title {
+    font-size: 1rem;
+  }
+
+  .skill__card {
+    margin: 5px;
+    width: 105px;
+    height: 120px;
+  }
+}

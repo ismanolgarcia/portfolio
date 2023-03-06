@@ -1,25 +1,15 @@
-.person {
-  background-color: $primary-color;
-  height: 100vh;
-  @include flex(center, center, column);
-  text-align: center;
-}
-
-.person__name {
-  color: $secondary-color;
-  font-size: 2rem;
-  margin: 15px 0 10px 0;
-}
-
-.person__rol {
-  color: $secondary-color;
-  margin: 0 0 32px 0;
+.person__image {
+  width: 300px;
+  border-radius: 50%;
 }
 
 .person__hidden {
   display: none;
 }
 
-.person__image {
-  width: 250px;
+@media screen and (max-width: 480px) {
+  .person__image{
+    width: 200px ;
+  }
 }
+

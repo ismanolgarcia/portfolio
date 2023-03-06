@@ -1,17 +1,16 @@
 .social {
   width: 300px;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   margin: 30px 0;
 }
 
 .social__icon {
   font-size: 40px;
-  color: $accent-color-0;
+  color: $accent-color-3;
 }
 
 .social__icon:hover {
   scale: 1.2;
   color: $secondary-color;
 }
-

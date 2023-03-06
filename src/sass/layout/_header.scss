@@ -1,0 +1,60 @@
+.logo {
+  max-width: 200px;
+}
+
+.hamburger {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  display: none;
+  outline: none;
+  height: 30px;
+  position: relative;
+  width: 30px;
+  z-index: 1000;
+  @media screen and (max-width: 768px) {
+    display: inline-block;
+  }
+
+  &-line {
+    background: $primary-color;
+    height: 3px;
+    position: absolute;
+    left: 0;
+    transition: all 0.2s ease-out;
+    width: 100%;
+
+    .hamburger:hover & {
+      background: #5f0000;
+    }
+
+    &-top {
+      top: 3px;
+    }
+
+    .menu-active &-top {
+      top: 50%;
+      transform: rotate(45deg) translatey(-50%);
+    }
+
+    &-middle {
+      top: 50%;
+      transform: translatey(-50%);
+    }
+
+    .menu-active &-middle {
+      left: 50%;
+      opacity: 0;
+      width: 0;
+    }
+
+    &-bottom {
+      bottom: 3px;
+    }
+
+    .menu-active &-bottom {
+      bottom: 50%;
+      transform: rotate(-45deg) translatey(50%);
+    }
+  }
+}
