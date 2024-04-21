@@ -1,24 +1,7 @@
 {
   "name": "portfolio",
   "type": "module",
-  "version": "1.0.0",
-  "author": {
-    "name": "Ismanol García",
-    "email": "dev@ismanolgarcia.com",
-    "role": "Software Engineer",
-    "url": "https://www.ismanolgarcia.com/"
-  },
-  "keywords": [
-    "Ismanol García",
-    "Portfolio",
-    "Html",
-    "CSS",
-    "JavaScript",
-    "Frontend",
-    "React",
-    "Nextjs",
-    "Astro"
-  ],
+  "version": "0.0.1",
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
@@ -27,8 +10,8 @@
     "astro": "astro"
   },
   "dependencies": {
-    "@astrojs/check": "^0.4.1",
-    "astro": "^4.2.4",
-    "typescript": "^5.3.3"
+    "astro": "^4.6.3",
+    "@astrojs/check": "^0.5.8",
+    "typescript": "^5.2.2"
   }
 }
