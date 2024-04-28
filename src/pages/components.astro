@@ -1,0 +1,25 @@
+---
+import Button from '../components/ui/Button.astro';
+import Link from '../components/ui/Link.astro';
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Components">
+  <main class="mt-28">
+    <h2 class="text-3xl font-bold uppercase">Components</h2>
+    <section class="mx-12 my-10">
+      <h3 class="text-xl font-bold uppercase">Buttons</h3>
+      <div class="flex gap-4">
+        <Button href="#" tipo="fill" title="Button Fill" />
+        <Button href="#" tipo="outline" title="Button Outline" />
+      </div>
+    </section>
+
+    <section class="mx-12 my-10">
+      <h3 class="text-xl font-bold uppercase">Links</h3>
+      <div class="flex gap-4">
+        <Link href="#" title="Navigate to" />
+      </div>
+    </section>
+  </main>
+</Layout>
