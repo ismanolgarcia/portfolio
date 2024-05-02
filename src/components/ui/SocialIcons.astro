@@ -1,0 +1,32 @@
+---
+import { Github, Linkedin, Instagram, Xstate } from 'simple-icons-astro';
+import Link from '../ui/Link.astro';
+
+const listLink = [
+  'https://github.com/ismanolgarcia',
+  'https://www.linkedin.com/in/ismanolgarcia',
+  'https://www.instagram.com/ismanolgarcia',
+  'https://twitter.com/ismanolgarcia',
+];
+
+const ICONS: Record<string, any> = {
+  Github,
+  Linkedin,
+  Instagram,
+  Xstate,
+};
+---
+
+<div class="flex gap-5">
+  {
+    listLink.map((num, index) => {
+      const Icon = ICONS[Object.keys(ICONS)[index]];
+
+      return (
+        <Link href={num} title="Ismanol Garcia" typeLink="icon">
+          <Icon class="w-8 h-8 bg-stone-950 text-white p-1 rounded-md" />
+        </Link>
+      );
+    })
+  }
+</div>

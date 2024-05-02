@@ -1,14 +1,16 @@
 ---
 import Button from '../components/ui/Button.astro';
 import Link from '../components/ui/Link.astro';
+import SocialIcons from '../components/ui/SocialIcons.astro';
 import Layout from '../layouts/Layout.astro';
 ---
 
 <Layout title="Components">
   <main class="mt-28">
     <h2 class="text-3xl font-bold uppercase">Components</h2>
+
     <section class="mx-12 my-10">
-      <h3 class="text-xl font-bold uppercase">Buttons</h3>
+      <h3 class="text-xl font-bold uppercase mb-2">Buttons</h3>
       <div class="flex gap-4">
         <Button href="#" tipo="fill" title="Button Fill" />
         <Button href="#" tipo="outline" title="Button Outline" />
@@ -16,9 +18,16 @@ import Layout from '../layouts/Layout.astro';
     </section>
 
     <section class="mx-12 my-10">
-      <h3 class="text-xl font-bold uppercase">Links</h3>
+      <h3 class="text-xl font-bold uppercase mb-2">Links</h3>
       <div class="flex gap-4">
-        <Link href="#" title="Navigate to" />
+        <Link href="#" title="Navigate to" typeLink="nav" />
+      </div>
+    </section>
+
+    <section class="mx-12 my-10">
+      <h3 class="text-xl font-bold uppercase mb-2">Icons</h3>
+      <div class="flex gap-4">
+        <SocialIcons />
       </div>
     </section>
   </main>

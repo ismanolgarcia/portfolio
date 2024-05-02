@@ -17,7 +17,7 @@ const links = ['projects', 'contact me', 'Blog'];
       </div>
       <MenuItems class="hidden md:flex justify-between items-center">
         <nav class="flex justify-around gap-7 flex-col md:flex-row">
-          {links.map((link) => <Link href="#" title={link} />)}
+          {links.map((link) => <Link href="#" title={link} typeLink="nav" />)}
         </nav>
         <div class="block md:hidden mt-10">
           <Button tipo="fill" title="Resume" href="#" />
@@ -29,4 +29,3 @@ const links = ['projects', 'contact me', 'Blog'];
     </div>
   </Astronav>
 </header>
-

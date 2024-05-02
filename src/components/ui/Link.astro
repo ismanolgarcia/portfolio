@@ -2,15 +2,23 @@
 interface Props {
   title: string;
   href: string;
+  typeLink: string;
 }
 
-const { href, title } = Astro.props;
+const { href, title, typeLink } = Astro.props;
 ---
 
-<a href={href} class="capitalize text-xl font-bold">
-  <span class="link link-underline link-underline-black">
-    {title}
-  </span>
+<a
+  href={href}
+  class="capitalize text-xl font-bold"
+  {...typeLink === 'icon' && { target: '_blank', rel: 'noopener noreferrer' }}
+>
+  {
+    typeLink == 'nav' && (
+      <span class="link link-underline link-underline-black">{title}</span>
+    )
+  }
+  <slot />
 </a>
 
 <style>
