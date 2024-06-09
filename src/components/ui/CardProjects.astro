@@ -1,9 +1,48 @@
 ---
-
+import imgprojec from '@/assets/images/project1.png';
+import { Image } from 'astro:assets';
+import {
+  Javascript,
+  React,
+  Nextdotjs,
+  Git,
+  Linux,
+  Html5,
+  Css3,
+  Tailwindcss,
+  Astro as AstroIcon,
+  Chakraui,
+} from 'simple-icons-astro';
+import Button from '@/components/ui/Button.astro';
 ---
 
-<article>
-  <h3>Title Projects</h3>
+<article class="flex gap-4">
+  <div>
+    <Image
+      src={imgprojec}
+      alt="hloa"
+      class="grayscale hover:grayscale-0 w-full rounded-md object-scale-down"
+    />
+  </div>
 
-  
+  <div class="flex flex-col justify-between">
+    <div>
+      <h3 class="font-bold text-2xl ">Title Projects</h3>
+      <p class='text-sm'>
+        Descripcion Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+        Sequi facilis expedita voluptate et ullam suscipit explicabo, dolores
+        cum aperiam, placeat voluptates saepe, a incidunt quis officii.
+      </p>
+    </div>
+    <div class="flex gap-4">
+      <Javascript class="w-10 h-10 bg-stone-950 text-white p-2 rounded-md" />
+      <React class="w-10 h-10 bg-stone-950 text-white p-2 rounded-md" />
+      <Nextdotjs class="w-10 h-10 bg-stone-950 text-white p-2 rounded-md" />
+      <Tailwindcss class="w-10 h-10 bg-stone-950 text-white p-2 rounded-md" />
+    </div>
+    <div class="flex gap-4">
+      <Button tipo="fill" title="Resume" href="#" />
+      <Button tipo="fill" title="Resume" href="#" />
+    </div>
+  </div>
 </article>
