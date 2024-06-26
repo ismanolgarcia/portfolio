@@ -16,19 +16,19 @@ import {
 import Button from '@/components/ui/Button.astro';
 ---
 
-<article class="flex gap-4">
-  <div>
+<article class="flex flex-col gap-4 w-[30rem]">
+  <div class="">
     <Image
       src={imgprojec}
       alt="hloa"
-      class="grayscale hover:grayscale-0 w-full rounded-md object-scale-down"
+      class="w-full rounded-md object-scale-down"
     />
   </div>
 
-  <div class="flex flex-col justify-between">
+  <div class="flex flex-col justify-between gap-4">
     <div>
-      <h3 class="font-bold text-2xl ">Title Projects</h3>
-      <p class='text-sm'>
+      <h3 class="font-bold text-2xl">Title Projects</h3>
+      <p class="text-sm">
         Descripcion Lorem ipsum dolor sit amet consectetur, adipisicing elit.
         Sequi facilis expedita voluptate et ullam suscipit explicabo, dolores
         cum aperiam, placeat voluptates saepe, a incidunt quis officii.
@@ -41,8 +41,8 @@ import Button from '@/components/ui/Button.astro';
       <Tailwindcss class="w-10 h-10 bg-stone-950 text-white p-2 rounded-md" />
     </div>
     <div class="flex gap-4">
-      <Button tipo="fill" title="Resume" href="#" />
-      <Button tipo="fill" title="Resume" href="#" />
+      <Button tipo="fill" title="Code" href="#" />
+      <Button tipo="outline" title="Live" href="#" />
     </div>
   </div>
 </article>

@@ -1,10 +1,12 @@
 ---
-import CardProjects from '../ui/CardProjects.astro';
+import CardProjects from '@/components/ui/CardProjects.astro';
 ---
 
 <section id="projects">
   <h2 class="font-bold text-3xl text-center mt-16">< Projects / ></h2>
-  <div class="flex flex-col gap-14 mt-10">
+  <div class="flex justify-between gap-y-10 mt-10 flex-wrap">
+    <CardProjects />
+    <CardProjects />
     <CardProjects />
     <CardProjects />
   </div>
