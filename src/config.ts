@@ -1,8 +1,8 @@
 export const SITE = {
   website: 'https://ismanolgarcia.com', 
-  title: 'Simple Portfolio',
+  title: 'Portfolio',
   description: 'A simple but beautiful portfolio created with Astro',
-  tags: ['portfolio', 'Resume cv', 'Astro'],
+  tags: ['Ismanol García', 'Ismanol Garcia', 'Software', 'Portfolio', 'Projects', 'Proyectos', 'Ingeniero', 'Developer', 'Resume cv', 'Republica Dominicana'],
   ogImage: '/og-image.webp',
   logo: 'logo',
   logoText: 'LogoText',
@@ -15,19 +15,19 @@ export const SITE = {
 
 export const ME = {
   name: 'Ismanol García',
-  profession: 'Software Engineer | Full Stack Developer',
-  profileImage: 'pp.png',
+  profession: 'Software Engineer',
+  profileImage: 'pp.jpg',
   profileFacts: [
     {
-      value: 10,
+      value: 2,
       description: 'Years of Experience',
     },
     {
-      value: 5,
+      value: 2,
       description: 'Completed Projects',
     },
     {
-      value: 4,
+      value: 2,
       description: 'Satisfied Clients',
     },
   ],
@@ -63,7 +63,7 @@ export const SOCIALS = [
   },
   {
     name: 'Youtube',
-    url: 'https://www.youtube.com/ismanolgarcia',
+    url: 'https://www.youtube.com/@ismanolgarcia',
     icon: 'youtube-fill',
     show: true,
   },

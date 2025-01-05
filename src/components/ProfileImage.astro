@@ -1,0 +1,21 @@
+---
+import type { ImageMetadata } from 'astro';
+import { Image } from 'astro:assets';
+import { ME } from '@/config';
+const imageName = ME.profileImage;
+const imagePath = `/src/assets/${imageName}`;
+const images = import.meta.glob<{ default: ImageMetadata }>(
+  '/src/assets/*.{jpeg,jpg,png,gif}'
+);
+if (!images[imagePath])
+  throw new Error(
+    `"${imagePath}" does not exist in glob: "src/assets/*.{jpeg,jpg,png,gif}"`
+  );
+---
+
+<Image
+  class="rounded-full w-[130px] md:w-[140px] object-cover"
+  src={images[imagePath]()}
+  alt="profile avatar"
+  loading="eager"
+/>

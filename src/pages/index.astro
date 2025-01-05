@@ -1,9 +1,14 @@
 ---
+import ProfileInfo from '@/components/ProfileInfo.astro';
 import Layout from '../layouts/Layout.astro';
+import ProfileFacts from '@/components/ProfileFacts.astro';
+import ProfileActionButton from '@/components/ProfileActionButton.astro';
 ---
 
 <Layout title="Ismanol García" scrollSmooth={false}>
   <main class="container py-24 flex gap-8 flex-col">
-    <h2>Home</h2>
+    <ProfileInfo />
+    <ProfileFacts />
+    <ProfileActionButton />
   </main>
 </Layout>

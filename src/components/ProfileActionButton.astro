@@ -1,0 +1,35 @@
+---
+import { ME } from '@/config.ts';
+import ButtonType from './ui/ButtonType.astro';
+import DownloadArrow from './icons/DownloadArrow.astro';
+import LinkedIn from './icons/LinkedIn.astro';
+import EmailIcon from './icons/EmailIcon.astro';
+
+const resume = '/' + ME.contactInfo.resumeDoc;
+const { linkedin, email } = ME.contactInfo;
+---
+
+<div class="profile-action-buttons w-full flex gap-2">
+  <ButtonType variant="large" data-cv={resume} id="cvBtn">
+    Download CV <DownloadArrow width={24} height={24} />
+  </ButtonType>
+  <ButtonType variant="short">
+    <a href={linkedin} aria-label="my linkedIn profile link" target="_blank">
+      <LinkedIn width={24} height={24} />
+    </a>
+  </ButtonType>
+  <ButtonType variant="short">
+    <a href={`mailto:${email}`} aria-label="send me an email">
+      <EmailIcon />
+    </a>
+  </ButtonType>
+</div>
+
+<script>
+  const cvBtn = document.getElementById('cvBtn') as HTMLButtonElement;
+  const resume = cvBtn.dataset.cv;
+
+  cvBtn.addEventListener('click', () => {
+    window.open(resume, '_blank');
+  });
+</script>

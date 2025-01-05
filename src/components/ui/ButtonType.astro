@@ -1,0 +1,24 @@
+---
+export interface Props {
+  variant?: 'large' | 'short';
+  id?: string;
+  [key: string]: any;
+}
+
+const { variant = 'short', id, ...rest } = Astro.props;
+
+const baseStyle =
+  'rounded-md font-medium focus:outline-none transition duration-300 h-14';
+const largeStyle =
+  'border border-blue-500  bg-highlight-hover text-black hover:bg-highlight-primary w-[80%] ';
+const shortStyle = 'bg-black text-white hover:bg-neutral-darkest  md:w-[10%]  w-[20%]';
+const style = variant === 'large' ? largeStyle : shortStyle;
+---
+
+<button
+  id={id}
+  {...rest}
+  class={` ${baseStyle} ${style}  flex justify-center items-center gap-1 `}
+>
+  <slot />
+</button>
