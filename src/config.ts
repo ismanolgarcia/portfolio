@@ -62,16 +62,16 @@ export const SOCIALS = [
     show: true,
   },
   {
+    name: 'TikTok',
+    url: 'https://tiktok.com/ismanolgarcia',
+    icon: 'tiktok-fill',
+    show: true,
+  },
+  {
     name: 'Youtube',
     url: 'https://www.youtube.com/@ismanolgarcia',
     icon: 'youtube-fill',
     show: true,
-  },
-  {
-    name: 'TikTok',
-    url: 'https://tiktok.com/ismanolgarcia',
-    icon: 'tik-fill',
-    show: false,
   },
   {
     name: 'GitHub',
