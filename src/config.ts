@@ -5,7 +5,7 @@ export const SITE = {
   tags: ['Ismanol García', 'Ismanol Garcia', 'Software', 'Portfolio', 'Projects', 'Proyectos', 'Ingeniero', 'Developer', 'Resume cv', 'Republica Dominicana'],
   ogImage: '/og-image.webp',
   logo: 'logo',
-  logoText: 'LogoText',
+  logoText: 'IG',
   lang: 'en',
   favicon: '/favicon.png',
   repository: 'https://github.com/ismanolgarcia/portfolio.git',
@@ -37,9 +37,7 @@ export const ME = {
     resumeDoc: 'resume.pdf',
   },
   aboutMe:
-    'I am a software engineer with a passion for web development. I have experience in building web ' +
-    'applications using modern technologies. I am a self-taught developer who enjoys learning new things and ' +
-    'sharing knowledge with others.',
+    'I’m a software engineer passionate about web development. I specialize in building scalable applications with modern technologies. As a self-taught developer, I enjoy learning new things and sharing knowledge to foster continuous learning. I always strive to improve and provide innovative solutions in every project.'
 };
 
 export const SOCIALS = [
@@ -63,7 +61,7 @@ export const SOCIALS = [
   },
   {
     name: 'TikTok',
-    url: 'https://tiktok.com/ismanolgarcia',
+    url: 'https://tiktok.com/@ismanolgarcia',
     icon: 'tiktok-fill',
     show: true,
   },

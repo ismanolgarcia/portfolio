@@ -1,0 +1,33 @@
+---
+import Badge from './ui/badge.astro';
+import { formatDatetime } from '../lib/utils';
+
+interface Edu {
+  title: string;
+  school: string;
+  location: string;
+  startDate: string;
+  endDate?: string;
+  description: string;
+  currentUni: boolean;
+}
+
+const { eduData } = Astro.props; 
+const { title, school, location, startDate, endDate, description, currentUni } =
+  eduData as Edu;
+---
+
+<div class="flex flex-col gap-2">
+  <Badge>
+    {formatDatetime(startDate)} - {
+      currentUni ? 'Present' : formatDatetime(endDate)
+    }
+  </Badge>
+  <h3 class="text-xl font-bold">{title}</h3>
+  <div class="flex gap-2">
+    <p>{school}</p>
+    <span>/</span>
+    <p>{location}</p>
+  </div>
+  <p>{description}</p>
+</div>
