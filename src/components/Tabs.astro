@@ -1,4 +1,9 @@
-<div class="">
+---
+import AboutMeTab from './AboutMeTab.astro';
+import ProjectsTab from './ProjectsTab.astro';
+---
+
+<div>
   <div class="mb-8 bg-neutral-dark rounded-lg">
     <ul
       class="flex h-16 gap-2 p-2"
@@ -14,7 +19,7 @@
           type="button"
           role="tab"
           aria-controls="profile"
-          aria-selected="false">Portfolio</button
+          aria-selected="false">Projects</button
         >
       </li>
       <li class="w-full" role="presentation">
@@ -32,34 +37,20 @@
   </div>
   <div id="myTabContent">
     <div
-      class="bg-gray-50 p-4 rounded-lg dark:bg-gray-800"
+      class="p-4 rounded-lg"
       id="profile"
       role="tabpanel"
       aria-labelledby="profile-tab"
     >
-      <p class="text-gray-500 dark:text-gray-400 text-sm">
-        This is some placeholder content the <strong
-          class="font-medium text-gray-800 dark:text-white"
-          >Portoflio tab's associated content</strong
-        >. Clicking another tab will toggle the visibility of this one for the
-        next. The tab JavaScript swaps classes to control the content visibility
-        and styling.
-      </p>
+      <ProjectsTab />
     </div>
     <div
-      class="bg-gray-50 p-4 rounded-lg dark:bg-gray-800 hidden"
+      class="p-4 rounded-lg hidden"
       id="dashboard"
       role="tabpanel"
       aria-labelledby="dashboard-tab"
     >
-      <p class="text-gray-500 dark:text-gray-400 text-sm">
-        This is some placeholder content the <strong
-          class="font-medium text-gray-800 dark:text-white"
-          >About Me tab's associated content</strong
-        >. Clicking another tab will toggle the visibility of this one for the
-        next. The tab JavaScript swaps classes to control the content visibility
-        and styling.
-      </p>
+      <AboutMeTab />
     </div>
   </div>
 </div>
@@ -67,7 +58,7 @@
 <style>
   .active-tab {
     background-color: #0c151d;
-    color: #6bb5fe;;
+    color: #6bb5fe;
   }
 </style>
 <script>
