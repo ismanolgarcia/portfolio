@@ -1,0 +1,47 @@
+---
+import { Image } from 'astro:assets';
+import { getImage } from 'astro:assets';
+import type { AuthorInfo } from '@/lib/constants';
+
+interface Props extends AuthorInfo {}
+const { avatar, name, headline, username, flag } = Astro.props;
+
+const image = await getImage({ src: avatar, format: 'avif' });
+---
+
+<div class="flex items-center gap-4">
+  <div class="relative rounded-full shrink-0 overflow-hidden">
+    <Image
+      loading="eager"
+      src={image.src}
+      alt={name}
+      width={92}
+      height={92}
+      class="rounded-full"
+    />
+  </div>
+  <div class="flex flex-col gap-2">
+    <div class="flex flex-col gap-0.5">
+      <h1 class="text-xl font-semibold text-headings leading-tight">{name}</h1>
+      <div class="flex gap-2 items-center">
+        <h2 class="flex text-base text-foreground leading-tight">
+          {headline}
+        </h2>
+        <figure class="flex">
+          <Image
+            loading="eager"
+            src={flag}
+            alt="Flag"
+            width={20}
+            class="object-cover"
+          />
+        </figure>
+      </div>
+    </div>
+    <span
+      class="inline-flex items-center rounded-md bg-gray-400/10 px-2 py-1 text-xs font-medium text-gray-400 inset-ring inset-ring-gray-400/20 w-fit"
+    >
+      {username}
+    </span>
+  </div>
+</div>

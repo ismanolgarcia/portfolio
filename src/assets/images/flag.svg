@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg"
+     width="900" height="600" viewBox="0 0 300 200"
+     role="img" aria-label="Bandera de la República Dominicana cute pastel sin escudo, esquinas redondeadas">
+  <defs>
+    <!-- Gradientes suaves pastel -->
+    <linearGradient id="blueGrad" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#8BCBFF"/>
+      <stop offset="100%" stop-color="#6FAEFA"/>
+    </linearGradient>
+    <linearGradient id="redGrad" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#FFA7B1"/>
+      <stop offset="100%" stop-color="#FF7E8F"/>
+    </linearGradient>
+
+    <!-- Sombra exterior suave -->
+    <filter id="softShadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="3" stdDeviation="5" flood-color="#000" flood-opacity="0.12"/>
+    </filter>
+  </defs>
+
+  <!-- Fondo general con esquinas redondeadas -->
+  <rect width="300" height="200" rx="14" ry="14" fill="#fff" filter="url(#softShadow)"/>
+
+  <!-- Grosor de la cruz blanca -->
+  <!-- Total ancho: 300 | altura: 200 | cruz central: 30 -->
+  <!-- Por lo tanto: 135 px antes de la cruz, 135 px después -->
+  
+  <!-- Azul superior izquierdo -->
+  <path d="
+    M14,0 
+    H135 
+    Q150,0 150,15 
+    V85 
+    H0 
+    V14 
+    Q0,0 14,0 
+    Z" fill="url(#blueGrad)"/>
+
+  <!-- Rojo superior derecho -->
+  <path d="
+    M165,0 
+    H286 
+    Q300,0 300,14 
+    V85 
+    H150 
+    V15 
+    Q150,0 165,0 
+    Z" fill="url(#redGrad)"/>
+
+  <!-- Rojo inferior izquierdo -->
+  <path d="
+    M0,115 
+    H150 
+    V185 
+    Q150,200 135,200 
+    H14 
+    Q0,200 0,186 
+    V115 
+    Z" fill="url(#redGrad)"/>
+
+  <!-- Azul inferior derecho -->
+  <path d="
+    M150,115 
+    H300 
+    V186 
+    Q300,200 286,200 
+    H165 
+    Q150,200 150,185 
+    V115 
+    Z" fill="url(#blueGrad)"/>
+
+  <!-- Cruz blanca centrada -->
+  <rect x="135" y="0" width="30" height="200" fill="#fff"/>
+  <rect x="0" y="85" width="300" height="30" fill="#fff"/>
+
+  <!-- Detalle de brillo suave -->
+  <g opacity="0.9" transform="translate(22,16)">
+    <ellipse cx="0" cy="0" rx="6" ry="4" fill="#FFFFFF" opacity="0.6"/>
+    <ellipse cx="12" cy="3" rx="4" ry="2.5" fill="#FFFFFF" opacity="0.45"/>
+  </g>
+</svg>
